@@ -1,0 +1,34 @@
+﻿@page
+@model TEST_CallendarModel
+@{
+}
+<body>
+    <center>
+        <h1>@Request.Cookies["email"]</h1>
+    </center>
+</body>
+<script>
+    function nonSense() {
+        if (!getCookie("jeebus")) {
+            window.alert('for fack sake.');
+            document.cookie = "jeebus=fackinfuck";
+        } else {
+            window.alert(document.cookie);
+        }
+    }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+</script>

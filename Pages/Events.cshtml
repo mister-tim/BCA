@@ -1,0 +1,49 @@
+﻿@page
+@model EventsModel
+@{
+    ViewData["Title"] = "Events";
+}
+<style>
+    .event{
+        display: inline-block;
+    }
+    #rbcc {
+        width: 20%;
+        height: 10%;
+        padding: 1%;
+        cursor: pointer;
+    }
+    a{
+        cursor: pointer;
+    }
+    h2{
+        display: inline-block;
+        border: outset;
+    }
+    img{
+        width: 60%;
+        height: 80%;
+    }
+</style>
+<body>
+    <center>
+        <div style="border:outset;">
+            <h3 style="text-decoration:underline;">Upcoming event browser:</h3>
+            <div class="event">
+                <h2 style="background-image: url('../images/tileBlack.png');"><a onclick="switchFlyer(0)">Turkey Tourney</a></h2>
+                <h2 style="background-image: url('../images/tileWhite.png');"><a onclick="switchFlyer(1)">Winter Camp</a></h2> <br />
+                <img src="~/images/Flyer-TurkeyTourney.png" id="flyer" />
+            </div>
+        </div>
+    </center>
+</body>
+<script>
+    var events = [
+        '<img src="/images/Flyer-TurkeyTourney.png" id="flyer" />',
+        '<img src="/images/Flyer-WinterCamp.png" id="flyer" />'
+    ];
+
+    function switchFlyer(val) {
+        $("#flyer").replaceWith(events[val]);
+    }
+</script>

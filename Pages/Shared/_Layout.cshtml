@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="description" content="Group and private chess lessons for students in the Buffalo area." />
+    <meta name="keywords" content="Chess, Buffalo, Lessons, Private, Coach" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - BuffaloChessAssociation</title>
+
+    <environment include="Development">
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+        <link rel="stylesheet" href="~/css/site.css" />
+    </environment>
+    <environment exclude="Development">
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/css/bootstrap.min.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+        <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
+    </environment>
+    <link rel="stylesheet" href="~/css/MLayout.css" media="screen and (max-device-width: 799px)" type="text/css">
+    <link rel="stylesheet" href="~/css/Layout.css" media="screen and (min-device-width: 800px)" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <img src="~/images/BCA-Logo.png" alt="Logo Loading..." id="logo" />
+    <div id="navi">
+        <div><form action="/Index"><input type="submit" value="Home" class="wTile" /></form></div>
+        <div><form action="/Events"><input type="submit" value="Events" class="bTile" /></form></div>
+        <div><form action="/Benefits"><input type="submit" value="Benefits of Chess" class="wTile" /></form></div>
+        <div><form action="/MeetTheInstructors"><input type="submit" value="Meet The Instructors" class="bTile" /></form></div>
+        <div><form action="/Contact"><input type="submit" value="Contact Us" class="wTile" /></form></div>
+        <div><form action="/Basics"><input type="submit" value="Basics" class="bTile" /></form></div>
+    </div>
+    <partial name="_CookieConsentPartial" />
+
+    <div class="container body-content" id="rendy">
+        @RenderBody()
+        
+        <footer style="text-align: center">
+            <hr />
+            <p>&copy; 2018 - BuffaloChessAssociation</p>
+        </footer>
+    </div>
+
+    <environment include="Development">
+        <script src="~/lib/jquery/dist/jquery.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="~/js/site.js" asp-append-version="true"></script>
+    </environment>
+    <environment exclude="Development">
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery/jquery-3.3.1.min.js"
+                asp-fallback-src="~/lib/jquery/dist/jquery.min.js"
+                asp-fallback-test="window.jQuery"
+                crossorigin="anonymous"
+                integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT">
+        </script>
+        <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.7/bootstrap.min.js"
+                asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+                asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal"
+                crossorigin="anonymous"
+                integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa">
+        </script>
+        <script src="~/js/site.min.js" asp-append-version="true"></script>
+    </environment>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

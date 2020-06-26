@@ -1,0 +1,267 @@
+﻿@page
+@model PaymentModel
+@{ 
+    ViewData["Title"] = "Payment";
+}
+<head>
+    <!-- Include the PayPal JavaScript SDK -->
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <style>
+        #Poster{
+            visibility: hidden;
+        }
+        #Confirmation{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body onload="getStatus()">
+    <center>
+        <div id="confirm_select"></div>
+        <div id="paypal-button-container"></div>
+        <div>
+            <form method="post">
+                <input type="submit" id="Poster"/>
+            </form>
+        </div>
+        <div id="Confirmation">
+            <h1>Congratulations on your succesful order!</h1>
+            <h2>A confirmation E-mail has been sent to @Request.Cookies["email"]</h2>
+        </div>
+    </center>
+</body>
+<script>
+    function getStatus() {
+        if (!getCookie("paymentstatus")) {
+            getChoice();
+        } else {
+            $("#paypal-button-container").css("visibility", "hidden");
+            $("#confirm_select").css("visibility", "hidden");
+            $("#Confirmation").css("visibility", "visible");
+            document.cookie = "paymentstatus=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;"
+        }
+    }
+    function getChoice() {
+        var Choice = getCookie("class");
+        if (Choice != "ClassA") {
+            if (Choice != "ClassB") {
+                if (Choice != "ClassC") {
+                    window.alert("Error, no cookies found. Are they disabled? Redirecting.");
+                    document.location.href = "/Registration";
+                } else {
+                    $("#confirm_select").replaceWith("<div>You chose class C!</div>");
+                    renderPaymentC();
+                }
+            } else {
+                $("#confirm_select").replaceWith("<div>You chose class B!</div>");
+                renderPaymentB();
+            }
+        } else {
+            $("#confirm_select").replaceWith("<div>You chose class A!</div>");
+            renderPaymentA();
+        }
+    }
+    function getCookie(cname) {
+        var name = cname + "=";
+        var decodedCookie = decodeURIComponent(document.cookie);
+        var ca = decodedCookie.split(';');
+        for (var i = 0; i < ca.length; i++) {
+            var c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+                return c.substring(name.length, c.length);
+            }
+        }
+        return "";
+    }
+    function renderPaymentA() {
+        // Render the PayPal button
+        paypal.Button.render({
+            // Set your environment
+            env: 'sandbox', // sandbox | production
+
+            // Specify the style of the button
+            style: {
+                layout: 'vertical',  // horizontal | vertical
+                size: 'medium',    // medium | large | responsive
+                shape: 'rect',      // pill | rect
+                color: 'gold'       // gold | blue | silver | white | black
+            },
+
+            // Specify allowed and disallowed funding sources
+            //
+            // Options:
+            // - paypal.FUNDING.CARD
+            // - paypal.FUNDING.CREDIT
+            // - paypal.FUNDING.ELV
+            funding: {
+                allowed: [
+                    paypal.FUNDING.CARD,
+                    paypal.FUNDING.CREDIT
+                ],
+                disallowed: []
+            },
+
+            // Enable Pay Now checkout flow (optional)
+            commit: true,
+
+            // PayPal Client IDs - replace with your own
+            // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+            client: {
+                sandbox: 'AYKf94W3Thej-kbb2VS1dBhEzfBbiJ2zQxbFRk6UO2msIVAIust9TndlhAjuzmuLNbejV-0nemZwbq9n',
+                production: '<insert production client id>'
+            },
+
+            payment: function (data, actions) {
+                return actions.payment.create({
+                    payment: {
+                        transactions: [
+                            {
+                                amount: {
+                                    total: '1.00',
+                                    currency: 'USD'
+                                }
+                            }
+                        ]
+                    }
+                });
+            },
+
+            onAuthorize: function (data, actions) {
+                return actions.payment.execute()
+                    .then(function () {
+                        $(document).ready(postIt);
+                    });
+            }
+        }, '#paypal-button-container');
+    }
+    function renderPaymentB() {
+        // Render the PayPal button
+        paypal.Button.render({
+            // Set your environment
+            env: 'sandbox', // sandbox | production
+
+            // Specify the style of the button
+            style: {
+                layout: 'vertical',  // horizontal | vertical
+                size: 'medium',    // medium | large | responsive
+                shape: 'rect',      // pill | rect
+                color: 'gold'       // gold | blue | silver | white | black
+            },
+
+            // Specify allowed and disallowed funding sources
+            //
+            // Options:
+            // - paypal.FUNDING.CARD
+            // - paypal.FUNDING.CREDIT
+            // - paypal.FUNDING.ELV
+            funding: {
+                allowed: [
+                    paypal.FUNDING.CARD,
+                    paypal.FUNDING.CREDIT
+                ],
+                disallowed: []
+            },
+
+            // Enable Pay Now checkout flow (optional)
+            commit: true,
+
+            // PayPal Client IDs - replace with your own
+            // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+            client: {
+                sandbox: 'AYKf94W3Thej-kbb2VS1dBhEzfBbiJ2zQxbFRk6UO2msIVAIust9TndlhAjuzmuLNbejV-0nemZwbq9n',
+                production: '<insert production client id>'
+            },
+
+            payment: function (data, actions) {
+                return actions.payment.create({
+                    payment: {
+                        transactions: [
+                            {
+                                amount: {
+                                    total: '10.00',
+                                    currency: 'USD'
+                                }
+                            }
+                        ]
+                    }
+                });
+            },
+
+            onAuthorize: function (data, actions) {
+                return actions.payment.execute()
+                    .then(function () {
+                        $(document).ready(postIt);
+                    });
+            }
+        }, '#paypal-button-container');
+    }
+    function renderPaymentC() {
+        // Render the PayPal button
+        paypal.Button.render({
+            // Set your environment
+            env: 'sandbox', // sandbox | production
+
+            // Specify the style of the button
+            style: {
+                layout: 'vertical',  // horizontal | vertical
+                size: 'medium',    // medium | large | responsive
+                shape: 'rect',      // pill | rect
+                color: 'gold'       // gold | blue | silver | white | black
+            },
+
+            // Specify allowed and disallowed funding sources
+            //
+            // Options:
+            // - paypal.FUNDING.CARD
+            // - paypal.FUNDING.CREDIT
+            // - paypal.FUNDING.ELV
+            funding: {
+                allowed: [
+                    paypal.FUNDING.CARD,
+                    paypal.FUNDING.CREDIT
+                ],
+                disallowed: []
+            },
+
+            // Enable Pay Now checkout flow (optional)
+            commit: true,
+
+            // PayPal Client IDs - replace with your own
+            // Create a PayPal app: https://developer.paypal.com/developer/applications/create
+            client: {
+                sandbox: 'AYKf94W3Thej-kbb2VS1dBhEzfBbiJ2zQxbFRk6UO2msIVAIust9TndlhAjuzmuLNbejV-0nemZwbq9n',
+                production: '<insert production client id>'
+            },
+
+            payment: function (data, actions) {
+                return actions.payment.create({
+                    payment: {
+                        transactions: [
+                            {
+                                amount: {
+                                    total: '25.00',
+                                    currency: 'USD'
+                                }
+                            }
+                        ]
+                    }
+                });
+            },
+
+            onAuthorize: function (data, actions) {
+                return actions.payment.execute()
+                    .then(function () {
+                        $(document).ready(postIt);
+                    });
+            }
+        }, '#paypal-button-container');
+    }
+    function postIt() {
+        document.cookie = "paymentstatus=complete";
+        $("#Poster").click();
+        $("#paypal-button-container").replaceWith("<div><h1>Congratulations on your order!</h1></div>");
+    }
+</script>

@@ -1,0 +1,680 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword />
+    <_PublishTargetUrl>ftp://access809658645.webspace-data.io/wwwroot</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="appsettings.Development.json">
+      <publishTime>11/05/2018 05:46:28</publishTime>
+    </File>
+    <File Include="appsettings.json">
+      <publishTime>11/05/2018 05:46:28</publishTime>
+    </File>
+    <File Include="dotnet-aspnet-codegenerator-design.dll">
+      <publishTime>06/07/2018 00:27:02</publishTime>
+    </File>
+    <File Include="en/Microsoft.VisualStudio.Imaging.resources.dll">
+      <publishTime>02/18/2019 14:44:50</publishTime>
+    </File>
+    <File Include="en/Microsoft.VisualStudio.Utilities.resources.dll">
+      <publishTime>02/18/2019 14:44:50</publishTime>
+    </File>
+    <File Include="Google.Apis.Auth.dll">
+      <publishTime>05/09/2019 15:02:54</publishTime>
+    </File>
+    <File Include="Google.Apis.Auth.PlatformServices.dll">
+      <publishTime>05/09/2019 15:02:54</publishTime>
+    </File>
+    <File Include="Google.Apis.Calendar.v3.dll">
+      <publishTime>05/16/2019 08:06:54</publishTime>
+    </File>
+    <File Include="Google.Apis.Core.dll">
+      <publishTime>05/09/2019 15:02:46</publishTime>
+    </File>
+    <File Include="Google.Apis.dll">
+      <publishTime>05/09/2019 15:02:46</publishTime>
+    </File>
+    <File Include="JohnsonChessAcademy.deps.json">
+      <publishTime>12/11/2019 08:47:48</publishTime>
+    </File>
+    <File Include="JohnsonChessAcademy.dll">
+      <publishTime>12/10/2019 07:08:45</publishTime>
+    </File>
+    <File Include="JohnsonChessAcademy.pdb">
+      <publishTime>12/10/2019 07:08:45</publishTime>
+    </File>
+    <File Include="JohnsonChessAcademy.runtimeconfig.json">
+      <publishTime>12/11/2019 08:47:48</publishTime>
+    </File>
+    <File Include="JohnsonChessAcademy.Views.dll">
+      <publishTime>12/11/2019 08:47:15</publishTime>
+    </File>
+    <File Include="JohnsonChessAcademy.Views.pdb">
+      <publishTime>12/11/2019 08:47:15</publishTime>
+    </File>
+    <File Include="libman.json">
+      <publishTime>11/08/2018 22:02:43</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.CSharp.Workspaces.dll">
+      <publishTime>02/18/2019 14:56:11</publishTime>
+    </File>
+    <File Include="Microsoft.CodeAnalysis.Workspaces.dll">
+      <publishTime>02/18/2019 14:56:16</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Designer.Interfaces.dll">
+      <publishTime>02/18/2019 14:44:50</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.dll">
+      <publishTime>02/18/2019 14:44:50</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.ImageCatalog.dll">
+      <publishTime>02/18/2019 14:44:50</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Imaging.dll">
+      <publishTime>02/18/2019 14:44:50</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Utilities.dll">
+      <publishTime>02/18/2019 14:44:50</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Contracts.dll">
+      <publishTime>06/07/2018 00:27:00</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Core.dll">
+      <publishTime>06/07/2018 00:26:58</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.dll">
+      <publishTime>06/07/2018 00:26:54</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll">
+      <publishTime>06/07/2018 00:26:56</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll">
+      <publishTime>06/07/2018 00:27:02</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll">
+      <publishTime>06/07/2018 00:27:02</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll">
+      <publishTime>06/07/2018 00:26:58</publishTime>
+    </File>
+    <File Include="Microsoft.VisualStudio.Windows.Forms.dll">
+      <publishTime>02/18/2019 14:44:50</publishTime>
+    </File>
+    <File Include="NuGet.Frameworks.dll">
+      <publishTime>02/18/2019 14:56:05</publishTime>
+    </File>
+    <File Include="System.Composition.AttributedModel.dll">
+      <publishTime>02/18/2019 14:58:30</publishTime>
+    </File>
+    <File Include="System.Composition.Convention.dll">
+      <publishTime>02/18/2019 14:58:30</publishTime>
+    </File>
+    <File Include="System.Composition.Hosting.dll">
+      <publishTime>02/18/2019 14:58:30</publishTime>
+    </File>
+    <File Include="System.Composition.Runtime.dll">
+      <publishTime>02/18/2019 14:58:30</publishTime>
+    </File>
+    <File Include="System.Composition.TypedParts.dll">
+      <publishTime>02/18/2019 14:58:30</publishTime>
+    </File>
+    <File Include="web.config">
+      <publishTime>12/11/2019 08:47:48</publishTime>
+    </File>
+    <File Include="wwwroot/css/Basics.css">
+      <publishTime>12/11/2019 08:33:42</publishTime>
+    </File>
+    <File Include="wwwroot/css/Layout.css">
+      <publishTime>12/10/2019 09:03:36</publishTime>
+    </File>
+    <File Include="wwwroot/css/MBasics.css">
+      <publishTime>12/11/2019 08:44:10</publishTime>
+    </File>
+    <File Include="wwwroot/css/Meet.css">
+      <publishTime>12/10/2019 09:31:22</publishTime>
+    </File>
+    <File Include="wwwroot/css/MLayout.css">
+      <publishTime>12/10/2019 09:50:07</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.css">
+      <publishTime>03/14/2019 19:55:00</publishTime>
+    </File>
+    <File Include="wwwroot/css/site.min.css">
+      <publishTime>11/05/2018 05:46:28</publishTime>
+    </File>
+    <File Include="wwwroot/favicon.ico">
+      <publishTime>11/06/2019 08:33:22</publishTime>
+    </File>
+    <File Include="wwwroot/images/banner1.svg">
+      <publishTime>11/05/2018 05:46:28</publishTime>
+    </File>
+    <File Include="wwwroot/images/banner2.svg">
+      <publishTime>11/05/2018 05:46:28</publishTime>
+    </File>
+    <File Include="wwwroot/images/banner3.svg">
+      <publishTime>11/05/2018 05:46:28</publishTime>
+    </File>
+    <File Include="wwwroot/images/BCA-Logo.png">
+      <publishTime>11/06/2019 08:33:22</publishTime>
+    </File>
+    <File Include="wwwroot/images/bg-edited.png">
+      <publishTime>01/30/2019 06:22:44</publishTime>
+    </File>
+    <File Include="wwwroot/images/Flyer-TurkeyTourney.png">
+      <publishTime>12/09/2019 19:16:38</publishTime>
+    </File>
+    <File Include="wwwroot/images/Flyer-WinterCamp.png">
+      <publishTime>12/09/2019 19:18:53</publishTime>
+    </File>
+    <File Include="wwwroot/images/John.jpg">
+      <publishTime>05/30/2019 20:57:50</publishTime>
+    </File>
+    <File Include="wwwroot/images/Mark.jpg">
+      <publishTime>05/30/2019 20:57:57</publishTime>
+    </File>
+    <File Include="wwwroot/images/rbcc.png">
+      <publishTime>06/01/2019 18:57:24</publishTime>
+    </File>
+    <File Include="wwwroot/images/tileBlack.png">
+      <publishTime>03/27/2019 16:09:12</publishTime>
+    </File>
+    <File Include="wwwroot/images/tileWhite.png">
+      <publishTime>03/27/2019 16:08:34</publishTime>
+    </File>
+    <File Include="wwwroot/images/wikipedia/bB.png">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/images/wikipedia/bK.png">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/images/wikipedia/bN.png">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/images/wikipedia/bP.png">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/images/wikipedia/bQ.png">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/images/wikipedia/bR.png">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/images/wikipedia/wB.png">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/images/wikipedia/wK.png">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/images/wikipedia/wN.png">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/images/wikipedia/wP.png">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/images/wikipedia/wQ.png">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/images/wikipedia/wR.png">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/chess.js/chess.js">
+      <publishTime>11/08/2018 22:02:45</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/chess.js/chess.min.js">
+      <publishTime>11/08/2018 22:02:45</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/chessboardjs/css/chessboard-0.3.0.css">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/chessboardjs/css/chessboard-0.3.0.min.css">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/chessboardjs/js/chessboard-0.3.0.js">
+      <publishTime>01/28/2019 09:30:44</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/chessboardjs/js/chessboard-0.3.0.min.js">
+      <publishTime>11/12/2018 06:01:19</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/chessboardjs/LICENSE.txt">
+      <publishTime>11/08/2018 20:43:24</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/CHANGELOG.txt">
+      <publishTime>01/30/2019 03:18:13</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/CONTRIBUTING.txt">
+      <publishTime>01/30/2019 03:18:13</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/agenda-views.html">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/background-events.html">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/basic-views.html">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/default.html">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/external-dragging.html">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/gcal.html">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/js/theme-chooser.js">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/json.html">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/json/events.json">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/list-views.html">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/locales.html">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/php/get-events.php">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/php/get-timezones.php">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/php/utils.php">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/selectable.html">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/themes.html">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/timezones.html">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/demos/week-numbers.html">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/fullcalendar.css">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/fullcalendar.js">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/fullcalendar.min.css">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/fullcalendar.min.js">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/fullcalendar.print.css">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/fullcalendar.print.min.css">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/gcal.js">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/gcal.min.js">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/lib/jquery-ui.min.js">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/lib/jquery.min.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/lib/moment.min.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/LICENSE.txt">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale-all.js">
+      <publishTime>01/30/2019 03:18:14</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/af.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ar-dz.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ar-kw.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ar-ly.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ar-ma.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ar-sa.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ar-tn.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ar.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/be.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/bg.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/bs.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ca.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/cs.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/da.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/de-at.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/de-ch.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/de.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/el.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/en-au.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/en-ca.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/en-gb.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/en-ie.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/en-nz.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/es-do.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/es-us.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/es.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/et.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/eu.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/fa.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/fi.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/fr-ca.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/fr-ch.js">
+      <publishTime>01/30/2019 03:18:15</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/fr.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/gl.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/he.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/hi.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/hr.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/hu.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/id.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/is.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/it.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ja.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ka.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/kk.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ko.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/lb.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/lt.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/lv.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/mk.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ms-my.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ms.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/nb.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/nl-be.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/nl.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/nn.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/pl.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/pt-br.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/pt.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ro.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/ru.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/sk.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/sl.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/sq.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/sr-cyrl.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/sr.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/sv.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/th.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/tr.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/uk.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/vi.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/zh-cn.js">
+      <publishTime>01/30/2019 03:18:16</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/zh-hk.js">
+      <publishTime>01/30/2019 03:18:17</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/fullcalendar-3.10.0/locale/zh-tw.js">
+      <publishTime>01/30/2019 03:18:17</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/Javamail/activation.jar">
+      <publishTime>01/30/2019 09:11:29</publishTime>
+    </File>
+    <File Include="wwwroot/js/Libs/Javamail/javax.mail-1.4.4.jar">
+      <publishTime>01/30/2019 09:11:42</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.js">
+      <publishTime>11/05/2018 05:46:28</publishTime>
+    </File>
+    <File Include="wwwroot/js/site.min.js">
+      <publishTime>11/05/2018 05:46:28</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/.bower.json">
+      <publishTime>11/05/2018 05:46:28</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css">
+      <publishTime>11/05/2018 05:46:28</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.css.map">
+      <publishTime>11/05/2018 05:46:28</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css">
+      <publishTime>11/05/2018 05:46:28</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap-theme.min.css.map">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.css.map">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/css/bootstrap.min.css.map">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.js">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/bootstrap.min.js">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/dist/js/npm.js">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/bootstrap/LICENSE">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/.bower.json">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation-unobtrusive/LICENSE.txt">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/.bower.json">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.js">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/additional-methods.min.js">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.js">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/dist/jquery.validate.min.js">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery-validation/LICENSE.md">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/.bower.json">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.js">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.js">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/dist/jquery.min.map">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/lib/jquery/LICENSE.txt">
+      <publishTime>11/05/2018 05:46:29</publishTime>
+    </File>
+    <File Include="wwwroot/ReadMe">
+      <publishTime>12/10/2019 06:57:06</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

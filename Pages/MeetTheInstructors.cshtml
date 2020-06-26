@@ -1,0 +1,62 @@
+﻿@page
+@model MeetTheInstructorsModel
+@{
+    ViewData["Title"] = "Meet the Instructors";
+}
+<link rel="stylesheet" href="~/css/Meet.css" type="text/css" />
+<!--<link rel="stylesheet" href="~/css/MMeet.css" media="screen and (max-device-width: 799px)" type="text/css" />-->
+<script>
+    //Let them know to swipe on mobile devices.
+    window.onload(function () {
+
+    })
+    //Enable swiping.
+    $(document).on("pagecreate", ".bio", function () {
+        $(".bio").on("swipeleft", function () {
+            alert("You swiped left!");
+        });
+    });
+</script>
+<body>
+    <div class="bio" id="M">
+        <center>
+            <h1>Mark Johnson</h1>
+        </center>
+        <div id="mark">
+            <p>
+                Mark Johnson has been practicing chess since he was a child.
+                His peak online rating was 2290, and he has competed in several major tournaments.
+                These include the World Open (10th place), Marchand Open (3rd place), and the Can-Am (1st place).
+            </p>
+            <p>
+                He volunteered teaching chess at North Tonawanda High School from 2009-2015.
+                During this time he studied Business at the University at Buffalo, where he served as president of the chess club in 2012.
+                After this he coached rowing at City Honors from 2013-2015. He has been teaching for Kids Play Chess for four years at schools all across Western New York.
+                He is currently studying Actuarial Science, and will be taking the first exam later this year.
+            </p>
+        </div>
+        <div>
+            <img src="~/images/Mark.jpg" alt="Mark Pic" id="Mpic" />
+        </div>
+    </div>
+    <div class="bio" id="J">
+        <center>
+            <h1>John Hanni</h1>
+        </center>
+        <div id="john">
+            <p>
+                John Hanni has spent most of his life teaching.
+                He began after receiving his black belt at Yi-Dan Cha Gi Martial Arts during his senior year of high school.
+                He then went on to run martial arts classes for both children and adults for over 6 years, during which time he earned a second degree black belt.
+            </p>
+            <p>
+                While studying Business and English at the University at Buffalo he served as President for their Chess Club during the 2014-2015 academic year.
+                Not long after this he began teaching for Kids Play Chess, a business which offers chess classes as afterschool programs.
+                He has taught with them for three years and at half a dozen schools across Western New York.
+            </p>
+        </div>
+        <div>
+            <img src="~/images/John.jpg" alt="John Pic" id="Jpic" />
+        </div>
+    </div>
+</body>

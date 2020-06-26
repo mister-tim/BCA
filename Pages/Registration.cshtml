@@ -1,0 +1,95 @@
+﻿@page
+@model RegistrationModel
+@{
+    ViewData["Title"] = "Registration";
+}
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+</head>
+<body>
+    <center>
+        <div>
+            <h1>Registration for Rainbow Bridge Classes</h1>
+            <p>
+                Students looking to attend our program at Rainbow Bridge can sign up by emailing one of us, 
+                filling out the form on this website, or by speaking with any of the
+                staff at the Rainbow Bridge Culture Center.
+            </p>
+        </div>
+        <div>
+            <form>
+                Student Name:<br />
+                <input type="text" id="sn" /><br />
+                Student Age:<br />
+                <input type="text" id="age" /><br />
+                Parent Name:<br />
+                <input type="text" id="pn" /><br />
+                Contact Email:<br />
+                <input type="text" id="eml" /><br />
+                Skill Level:<br />
+                <input type="radio" name="Skillchoice" id="Uncertain" value="0" onclick="skillShow(this.value)" />Uncertain <br />
+                <input type="radio" name="Skillchoice" id="Beginner" value="1" onclick="skillShow(this.value)" />Beginner <br />
+                <input type="radio" name="Skillchoice" id="Intermediate" value="2" onclick="skillShow(this.value)" />Intermediate<br />
+                <input type="radio" name="Skillchoice" id="Advanced" value="3" onclick="skillShow(this.value)" />Advanced <br />
+                <p id="skillDesc"></p><br />
+                Class Type(s):<br />
+                <input type="radio" name="Classchoice" id="Weekday" value="0" onclick="classShow(this.value)" />Weekday Classes - $80/Month<br />
+                <input type="radio" name="Classchoice" id="Weekend" value="1" onclick="classShow(this.value)" />Weekend Classes - $55/Month<br />
+                <input type="radio" name="Classchoice" id="Practice" value="2" onclick="classShow(this.value)" />Practice Sessions - $20/Month<br />
+                <p id="classDesc"></p><br />
+            </form>
+            <button onclick="checkCredentials()">Register</button>
+        </div>
+    </center>
+</body>
+<script>
+    var SN, PN, NM, EML;
+    var Skills = [
+        "<p id='skillDesc'>If you're not sure that's okay! We have no problem playing with you to assess your skill.</p>",
+        '<p id="skillDesc">Beginner lessons will focus on core concepts of chess, such as center control and king safety. They will also review basic rules of the game, if required. (The instructor will be left with some flexibility in the first few lessons to allow for this.)The goal of Beginner classes will be to get students to a level where they understand what a winning position looks like and have a solid idea of how to get to one.</p>',
+        '<p id="skillDesc">Intermediate lessons will seek to build on this and teach students how to utilize basic tactics (such as pins and forks), and gain a more thorough understanding of previous concepts.This class should leave students familiar with tactical concepts and able to consistently recognize them on the board.</p>',
+        '<p id="skillDesc">Advanced classes  are open to “graduates” of the Intermediate program, or students who already have gained plenty of experience. Here students will develop their ability to actively generate plans and tactics during their games. This class intends to get students to the point where they are skilled enough to creatively solve problems and adapt to their opponent’s play.</p>'
+    ];
+    var Classes = [
+        '<p id="classDesc">An hour and a half each week that includes a lecture, two on one coaching while the kids play, puzzles and drills.</p>',
+        '<p id="classDesc">An hour each week that includes a lecture, two on one coaching while the kids play, puzzles and drills.</p>',
+        '<p id="classDesc">An hour each week of puzzles, drills and playing time.</p>'
+    ];
+    function checkCredentials() {
+        SN = document.getElementById("sn").value;
+        PN = document.getElementById("pn").value;
+        NM = document.getElementById("nm").value;
+        EML = document.getElementById("eml").value;
+        var EmailCheck = EML.split('@@');
+        if (EmailCheck.length != 2) {
+            window.alert("Please Enter A valid Email Address.");
+        } else {
+            register();
+        }
+    }
+    function register() {
+        document.cookie = "studentname=" + SN;
+        document.cookie = "parentname=" + PN;
+        document.cookie = "phonenumber=" + NM;
+        document.cookie = "email=" + EML;
+        document.cookie = "class=" + classCookie();
+        document.location.href = '/Payment';
+    }
+    function classCookie() {
+        var lst = document.getElementsByName("Classchoice");
+        var s;
+        for (var i = 0; i < lst.length; i++) {
+            if (lst[i].checked) {
+                s = lst[i].value;
+            }
+        }
+        return s;
+    }
+    function skillShow(val) {
+        $("#skillDesc").replaceWith(Skills[val]);
+    }
+    function classShow(val) {
+        $("#classDesc").replaceWith(Classes[val]);
+    }
+</script>

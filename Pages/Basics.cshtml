@@ -1,0 +1,53 @@
+﻿@page
+@model BasicsModel
+@{
+    ViewData["Title"] = "Basics";
+}
+<head>
+    <link rel="stylesheet" type="text/css" href="~/css/Basics.css" media="screen and (min-device-width: 800px)" />
+    <link rel="stylesheet" type="text/css" href="~/css/MBasics.css" media="screen and (max-device-width: 799px)" />
+    <script>
+        //Declare collection of embedded powerpoints.
+        var PowerPoints = [
+            '<div id="PlayerDisplay"><iframe src="https://onedrive.live.com/embed?cid=308B2192959F66E6&resid=308B2192959F66E6%21172&authkey=AL0mZN3DdYsMfDU&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe></div>',
+            '<div id="PlayerDisplay"><iframe src="https://onedrive.live.com/embed?cid=308B2192959F66E6&resid=308B2192959F66E6%21173&authkey=AEj8npe6F1LCpxA&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe></div>',
+            '<div id="PlayerDisplay"><iframe src="https://onedrive.live.com/embed?cid=308B2192959F66E6&resid=308B2192959F66E6%21174&authkey=ALJfKVQAQQKWBZU&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe></div>',
+            '<div id="PlayerDisplay"><iframe src="https://onedrive.live.com/embed?cid=308B2192959F66E6&resid=308B2192959F66E6%21175&authkey=AE8xrDZ3m9yvGqM&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe></div>',
+            '<div id="PlayerDisplay"><iframe src="https://onedrive.live.com/embed?cid=308B2192959F66E6&resid=308B2192959F66E6%21176&authkey=AF9beD4RsosNlww&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe></div>'
+        ];
+        //Launch Powerpoint Player.
+        function launchPowerPoint() {
+            $("#WelcomeMSG").css("display", "none");
+            $("#Player").css("display", "inline-block");
+        }
+        //Switch Presentation.
+        function switchPP(val) {
+            $("#PlayerDisplay").replaceWith(PowerPoints[val]);
+        }
+
+    </script>
+</head>
+<body>
+    <center>
+        <div id="WelcomeMSG">
+            <h1>Learning the basics!</h1>
+            <p>We've put together a few power point presentations in order to help students learn the basics of the game.</p>
+            <p>Completing these lessons prior to attending class will allow us to spend more of our time focused on advanced strategy and tactics.</p>
+            <button onclick="launchPowerPoint()">Let's Get Started!</button>
+        </div>
+        <div id="Player">
+            <div id="PlayerNav">
+                <div id="PlayerTitle"><h3>Lesson Navigation</h3></div>
+                <div><button onclick="switchPP(this.value)" class="Playercontrol" value="0">Chess Basics: The Pieces</button></div>
+                <div><button onclick="switchPP(this.value)" class="Playercontrol" value="1">Setting Up the Board</button></div>
+                <div><button onclick="switchPP(this.value)" class="Playercontrol" value="2">Piece Values and Good Objectives</button></div>
+                <div><button onclick="switchPP(this.value)" class="Playercontrol" value="3">Types of Trades</button></div>
+                <div><button onclick="switchPP(this.value)" class="Playercontrol" value="4" style="border-bottom:solid;">Checkmate!</button></div>
+            </div>
+            <div id="PlayerDisplay">
+                <iframe src="https://onedrive.live.com/embed?cid=308B2192959F66E6&resid=308B2192959F66E6%21172&authkey=AL0mZN3DdYsMfDU&em=2" width="402" height="327" frameborder="0" scrolling="no"></iframe>
+            </div>
+        </div>
+    </center>
+    
+</body>
