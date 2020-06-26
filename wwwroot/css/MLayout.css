@@ -1,0 +1,43 @@
+﻿body {
+    background-image: url("/images/bg-edited.png");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 1;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#logo {
+    height: 15%;
+    width: 15%;
+    top: 0;
+    z-index: 1;
+    margin-left: 42.5%;
+}
+
+#rendy {
+    margin-top: 5px;
+}
+
+#navi {
+    display: inline-block;
+    height: 10%;
+    position: relative;
+    width: 100%;
+    margin: 0 !important;
+    padding: 0 !important;
+    border-style: outset;
+}
+
+.bTile {
+    float: left;
+    width: 33.33%;
+    background-image: url(/images/tileBlack.png);
+}
+
+.wTile {
+    float: left;
+    width: 33.33%;
+    background-image: url(/images/tileWhite.png);
+}

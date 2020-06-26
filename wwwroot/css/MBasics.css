@@ -1,0 +1,27 @@
+﻿#Player {
+    display: none;
+    height: 30%;
+}
+
+#PlayerNav {
+}
+
+#PlayerDisplay {
+    left: 0% !important;
+}
+
+#PlayerTitle {
+    text-decoration-line: underline;
+}
+
+.Playercontrol {
+    width: 50%;
+    height: 16%;
+    color: white;
+    background-color: black;
+    border-top: solid;
+    border-left: none;
+    border-right: none;
+    border-color: white;
+    border-bottom: none;
+}
